@@ -1,0 +1,5 @@
+# Spark 程序
+
+Spark程序由driver进程和一系列executor进程组成。在集群的某个节点上，driver进程执行main()函数，它主要负责三件事情：维护Spark应用程序的相关信息；响应用户程序或输入；分析，分发和在executors中调度工作。
+
+executors是负责实际执行driver分发的工作。这表示executor只负责两件事：执行driver分配给它的代码，以及将executor上计算的状态报告给drvier节点。
